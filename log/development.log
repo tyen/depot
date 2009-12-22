@@ -11,3 +11,166 @@ Migrating to CreateProducts (20091222152042)
   [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `products`[0m
   [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `products`[0m
   [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `products`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20091222152042)
+Migrating to AddPriceToProduct (20091222153625)
+  [4;36;1mSQL (92.6ms)[0m   [0;1mALTER TABLE `products` ADD `price` decimal(8,2) DEFAULT 0[0m
+  [4;35;1mSQL (16.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091222153625')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `products`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20091222152042)
+Migrating to AddPriceToProduct (20091222153625)
+Migrating to AddTestData (20091222160400)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20091222152042)
+Migrating to AddPriceToProduct (20091222153625)
+Migrating to AddTestData (20091222160400)
+  [4;36;1mProduct Delete all (13.6ms)[0m   [0;1mDELETE FROM `products` [0m
+  [4;35;1mProduct Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT `products`.id FROM `products` WHERE (`products`.`title` = BINARY 'Pragmatic Version control') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (30.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091222160400')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `products`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20091222152042)
+Migrating to AddPriceToProduct (20091222153625)
+Migrating to AddTestData (20091222160400)
+Migrating to DeleteData (20091222163318)
+  [4;36;1mProduct Delete all (0.2ms)[0m   [0;1mDELETE FROM `products` [0m
+  [4;35;1mSQL (20.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091222163318')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `products`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20091222152042)
+Migrating to AddPriceToProduct (20091222153625)
+Migrating to AddTestData (20091222160400)
+Migrating to DeleteData (20091222163318)
+Migrating to AddTestData2 (20091222163449)
+  [4;36;1mProduct Delete all (0.2ms)[0m   [0;1mDELETE FROM `products` [0m
+  [4;35;1mProduct Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT `products`.id FROM `products` WHERE (`products`.`title` = BINARY 'Pragmatic Version control') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (17.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091222163449')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `products`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20091222152042)
+Migrating to AddPriceToProduct (20091222153625)
+Migrating to AddTestData (20091222160400)
+Migrating to DeleteData (20091222163318)
+Migrating to AddTestData2 (20091222163449)
+Migrating to AddTestData3 (20091222165232)
+  [4;36;1mProduct Delete all (24.1ms)[0m   [0;1mDELETE FROM `products` [0m
+  [4;35;1mProduct Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT `products`.id FROM `products` WHERE (`products`.`title` = BINARY 'Pragmatic Version control') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (29.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091222165232')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `products`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20091222152042)
+Migrating to AddPriceToProduct (20091222153625)
+Migrating to AddTestData (20091222160400)
+Migrating to DeleteData (20091222163318)
+Migrating to AddTestData2 (20091222163449)
+Migrating to AddTestData3 (20091222165232)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `products`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20091222152042)
+Migrating to AddPriceToProduct (20091222153625)
+Migrating to AddTestData (20091222160400)
+Migrating to DeleteData (20091222163318)
+Migrating to AddTestData2 (20091222163449)
+Migrating to AddTestData3 (20091222165232)
+Migrating to AddTestData4 (200912221165232)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20091222152042)
+Migrating to AddPriceToProduct (20091222153625)
+Migrating to AddTestData (20091222160400)
+Migrating to DeleteData (20091222163318)
+Migrating to AddTestData2 (20091222163449)
+Migrating to AddTestData3 (20091222165232)
+Migrating to AddTestData4 (20091222165233)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20091222152042)
+Migrating to AddPriceToProduct (20091222153625)
+Migrating to AddTestData (20091222160400)
+Migrating to DeleteData (20091222163318)
+Migrating to AddTestData2 (20091222163449)
+Migrating to AddTestData3 (20091222165232)
+Migrating to AddTestData4 (20091222170113)
+  [4;36;1mProduct Delete all (0.2ms)[0m   [0;1mDELETE FROM `products` [0m
+  [4;35;1mProduct Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT `products`.id FROM `products` WHERE (`products`.`title` = BINARY 'Pragmatic Version control') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (17.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091222170113')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `products`[0m

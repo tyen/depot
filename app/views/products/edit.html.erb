@@ -18,6 +18,10 @@
   <p>
     <%= f.submit 'Update' %>
   </p>
+  <p>
+  	<%= f.label :price %><br />
+	<%= f.text_field :price %>
+  </p>
 <% end %>
 
 <%= link_to 'Show', @product %> |
