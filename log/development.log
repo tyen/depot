@@ -12640,3 +12640,345 @@ Rendering store/index
   [4;36;1mProduct Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
 Rendered store/_cart (3.3ms)
 Completed in 61ms (View: 43, DB: 2) | 200 OK [http://localhost/store]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2009-12-23 15:26:01) [POST]
+  Parameters: {"commit"=>"Empty Cart"}
+Rendering store/empty_cart
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://localhost/store/empty_cart]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-12-23 15:26:03) [POST]
+  Parameters: {"commit"=>"Add to Cart", "id"=>"11"}
+  [4;35;1mProduct Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 11) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (9.9ms)
+Rendered store/_cart (13.7ms)
+Completed in 37ms (View: 17, DB: 2) | 200 OK [http://localhost/store/add_to_cart/11]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2009-12-23 15:26:05) [POST]
+  Parameters: {"commit"=>"Empty Cart"}
+Rendering store/empty_cart
+Completed in 21ms (View: 1, DB: 1) | 200 OK [http://localhost/store/empty_cart]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-12-23 15:26:06) [POST]
+  Parameters: {"commit"=>"Add to Cart", "id"=>"11"}
+  [4;35;1mProduct Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 11) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (9.8ms)
+Rendered store/_cart (13.6ms)
+Completed in 37ms (View: 17, DB: 2) | 200 OK [http://localhost/store/add_to_cart/11]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2009-12-23 15:26:07) [POST]
+  Parameters: {"commit"=>"Empty Cart"}
+Rendering store/empty_cart
+Completed in 19ms (View: 1, DB: 1) | 200 OK [http://localhost/store/empty_cart]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-12-23 15:26:09) [POST]
+  Parameters: {"commit"=>"Add to Cart", "id"=>"11"}
+  [4;35;1mProduct Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 11) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (10.2ms)
+Rendered store/_cart (13.9ms)
+Completed in 37ms (View: 17, DB: 2) | 200 OK [http://localhost/store/add_to_cart/11]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2009-12-23 15:26:10) [POST]
+  Parameters: {"commit"=>"Empty Cart"}
+Rendering store/empty_cart
+Completed in 19ms (View: 1, DB: 1) | 200 OK [http://localhost/store/empty_cart]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-12-23 15:26:11) [POST]
+  Parameters: {"commit"=>"Add to Cart", "id"=>"11"}
+  [4;35;1mProduct Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 11) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (9.7ms)
+Rendered store/_cart (13.5ms)
+Completed in 37ms (View: 17, DB: 2) | 200 OK [http://localhost/store/add_to_cart/11]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2009-12-23 15:26:13) [POST]
+  Parameters: {"commit"=>"Empty Cart"}
+Rendering store/empty_cart
+Completed in 22ms (View: 2, DB: 1) | 200 OK [http://localhost/store/empty_cart]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-12-23 15:26:14) [POST]
+  Parameters: {"commit"=>"Add to Cart", "id"=>"11"}
+  [4;35;1mProduct Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 11) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (9.9ms)
+Rendered store/_cart (13.6ms)
+Completed in 37ms (View: 17, DB: 2) | 200 OK [http://localhost/store/add_to_cart/11]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2009-12-23 15:26:16) [POST]
+  Parameters: {"commit"=>"Empty Cart"}
+Rendering store/empty_cart
+Completed in 20ms (View: 1, DB: 1) | 200 OK [http://localhost/store/empty_cart]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-12-23 15:26:17) [POST]
+  Parameters: {"commit"=>"Add to Cart", "id"=>"11"}
+  [4;35;1mProduct Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProduct Load (0.7ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 11) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (9.7ms)
+Rendered store/_cart (13.6ms)
+Completed in 37ms (View: 17, DB: 2) | 200 OK [http://localhost/store/add_to_cart/11]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20091222152042)
+Migrating to AddPriceToProduct (20091222153625)
+Migrating to AddTestData (20091222160400)
+Migrating to DeleteData (20091222163318)
+Migrating to AddTestData2 (20091222163449)
+Migrating to AddTestData3 (20091222165232)
+Migrating to AddTestData4 (20091222170113)
+Migrating to AddTestData5 (20091222170641)
+Migrating to AddTestData7 (20091222170940)
+Migrating to TestData (20091222171414)
+Migrating to TestData2 (20091222171831)
+Migrating to CreateSessions (20091222192745)
+Migrating to CreateOrders (20091223202710)
+  [4;36;1mSQL (48.3ms)[0m   [0;1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `address` text, `email` varchar(255), `pay_type` varchar(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (16.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091223202710')[0m
+Migrating to CreateLineItems (20091223202738)
+  [4;36;1mSQL (43.1ms)[0m   [0;1mCREATE TABLE `line_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11) NOT NULL, `order_id` int(11) NOT NULL, `quantity` int(11) NOT NULL, `total_price` decimal(8,2) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (16.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091223202738')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `line_items`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `line_items`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `line_items`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `orders`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `orders`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `products`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `sessions`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-12-23 16:12:20) [GET]
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart_item (5.5ms)
+Rendered store/_cart (12.3ms)
+Completed in 141ms (View: 118, DB: 2) | 200 OK [http://localhost/store]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#checkout (for 127.0.0.1 at 2009-12-23 16:12:24) [POST]
+  [4;35;1mOrder Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Rendering template within layouts/store
+Rendering store/checkout
+  [4;36;1mProduct Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart_item (11.9ms)
+Rendered store/_cart (16.5ms)
+Completed in 64ms (View: 36, DB: 3) | 200 OK [http://localhost/store/checkout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#save_order (for 127.0.0.1 at 2009-12-23 16:12:26) [POST]
+  Parameters: {"commit"=>"Place Order", "order"=>{"address"=>"", "name"=>"", "pay_type"=>"", "email"=>""}}
+
+ActionController::UnknownAction (No action responded to save_order. Actions: add_to_cart, checkout, decrement_cart_item, empty_cart, and index):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-12-23 16:23:51) [GET]
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart_item (5.2ms)
+Rendered store/_cart (10.4ms)
+Completed in 129ms (View: 108, DB: 2) | 200 OK [http://localhost/store]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#decrement_cart_item (for 127.0.0.1 at 2009-12-23 16:23:53) [POST]
+  Parameters: {"commit"=>"-", "title"=>"Pragmatic Project Automation"}
+  [4;35;1mProduct Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendering store/decrement_cart_item
+Rendered store/_cart (11.3ms)
+Completed in 49ms (View: 14, DB: 2) | 200 OK [http://localhost/store/decrement_cart_item?title=Pragmatic+Project+Automation]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-12-23 16:23:57) [POST]
+  Parameters: {"commit"=>"Add to Cart", "id"=>"11"}
+  [4;36;1mProduct Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 11) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (9.8ms)
+Rendered store/_cart (14.2ms)
+Completed in 39ms (View: 18, DB: 2) | 200 OK [http://localhost/store/add_to_cart/11]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#decrement_cart_item (for 127.0.0.1 at 2009-12-23 16:24:03) [POST]
+  Parameters: {"commit"=>"-", "title"=>"Pragmatic Project Automation"}
+  [4;36;1mProduct Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendering store/decrement_cart_item
+Rendered store/_cart (7.4ms)
+Completed in 33ms (View: 10, DB: 2) | 200 OK [http://localhost/store/decrement_cart_item?title=Pragmatic+Project+Automation]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2009-12-23 16:24:07) [POST]
+  Parameters: {"commit"=>"Empty Cart"}
+Rendering store/empty_cart
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://localhost/store/empty_cart]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-12-23 16:35:25) [GET]
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (4.6ms)
+Completed in 120ms (View: 55, DB: 2) | 200 OK [http://localhost/store]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#checkout (for 127.0.0.1 at 2009-12-23 16:35:27) [POST]
+Redirected to http://localhost:3000/store
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/store/checkout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-12-23 16:35:27) [GET]
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (4.6ms)
+Completed in 62ms (View: 45, DB: 2) | 200 OK [http://localhost/store]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-12-23 16:35:29) [POST]
+  Parameters: {"commit"=>"Add to Cart", "id"=>"11"}
+  [4;35;1mProduct Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 11) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (10.1ms)
+Rendered store/_cart (14.4ms)
+Completed in 39ms (View: 18, DB: 2) | 200 OK [http://localhost/store/add_to_cart/11]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#checkout (for 127.0.0.1 at 2009-12-23 16:35:33) [POST]
+  [4;35;1mOrder Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Rendering template within layouts/store
+Rendering store/checkout
+  [4;36;1mProduct Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart_item (12.8ms)
+Rendered store/_cart (17.7ms)
+Completed in 117ms (View: 89, DB: 3) | 200 OK [http://localhost/store/checkout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#checkout (for 127.0.0.1 at 2009-12-23 16:36:31) [POST]
+  [4;35;1mOrder Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Rendering template within layouts/store
+Rendering store/checkout
+  [4;36;1mProduct Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart_item (15.8ms)
+Rendered store/_cart (20.9ms)
+Completed in 81ms (View: 38, DB: 4) | 200 OK [http://localhost/store/checkout]
+  [4;35;1mSQL (12.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#checkout (for 127.0.0.1 at 2009-12-23 16:36:48) [POST]
+  [4;35;1mOrder Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Rendering template within layouts/store
+Rendering store/checkout
+  [4;36;1mProduct Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart_item (14.0ms)
+Rendered store/_cart (18.2ms)
+Completed in 70ms (View: 30, DB: 15) | 200 OK [http://localhost/store/checkout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#checkout (for 127.0.0.1 at 2009-12-23 16:37:13) [POST]
+  [4;35;1mOrder Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Rendering template within layouts/store
+Rendering store/checkout
+  [4;36;1mProduct Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart_item (13.8ms)
+Rendered store/_cart (19.0ms)
+Completed in 73ms (View: 37, DB: 3) | 200 OK [http://localhost/store/checkout]
