@@ -21,9 +21,23 @@ class StoreController < ApplicationController
     redirect_to_index("Invalid product")
   end
 
+  def decrement_cart_item
+    @cart = find_cart
+    item = @cart.find_item_by_title(params[:title])
+    item.decrement_quantity
+    @cart.delete_item(item) if item.quantity == 0
+    respond_to do |format|
+      format.js if request.xhr?
+      format.html {redirect_to_index}
+    end
+  end
+
   def empty_cart
     session[:cart] = nil
-    redirect_to_index
+    respond_to do |format|
+      format.js if request.xhr?
+      format.html {redirect_to_index}
+    end
   end
 
   private

@@ -6,7 +6,6 @@ class Cart
 	end
 
 	def add_product(product)
-		#@items << product
 		current_item = @items.find {|item| item.product == product}
 		if current_item
 			current_item.increment_quantity
@@ -16,6 +15,14 @@ class Cart
 		end
     current_item
 	end
+
+  def find_item_by_title(title)
+    @items.find { |item| item.title == title }
+  end
+
+  def delete_item(item)
+    @items.delete(item)
+  end
 
   def total_items
     @items.sum { |item| item.quantity }
