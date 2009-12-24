@@ -16,12 +16,12 @@ class Cart
     current_item
 	end
 
-  def find_item_by_title(title)
-    @items.find { |item| item.title == title }
-  end
-
-  def delete_item(item)
-    @items.delete(item)
+  def delete_product(product)
+		current_item = @items.find {|item| item.product == product}
+    if current_item
+      current_item.decrement_quantity
+      @items.delete(current_item) if current_item.quantity == 0
+    end
   end
 
   def total_items

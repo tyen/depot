@@ -16,9 +16,9 @@
   <% end %>
   <div id="columns">
     <div id="side">
-      <div id="cart">
+      <% hidden_div_if(@cart.items.empty?, :id => "cart") do %>
         <%= render(:partial => "cart", :object => @cart) %>
-      </div>
+      <% end %>
       <br />
       <%= link_to "Home", :action => "index" %><br />
       <a href="http://www..../faq">Questions</a><br />

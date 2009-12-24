@@ -21,11 +21,9 @@ class StoreController < ApplicationController
     redirect_to_index("Invalid product")
   end
 
-  def decrement_cart_item
+  def decrement_product
     @cart = find_cart
-    item = @cart.find_item_by_title(params[:title])
-    item.decrement_quantity
-    @cart.delete_item(item) if item.quantity == 0
+    @cart.delete_product(Product.find(params[:id]))
     respond_to do |format|
       format.js if request.xhr?
       format.html {redirect_to_index}
@@ -46,6 +44,18 @@ class StoreController < ApplicationController
       redirect_to_index("Your cart is empty")
     else
       @order = Order.new
+    end
+  end
+
+  def save_order
+    @cart = find_cart
+    @order = Order.new(params[:order])
+    @order.add_line_items_from_cart(@cart)
+    if @order.save
+      session[:cart] = nil
+      redirect_to_index("Thank you for your order")
+    else
+      render :action => 'checkout'
     end
   end
 
