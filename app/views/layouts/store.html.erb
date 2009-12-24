@@ -11,19 +11,32 @@
     <%= image_tag("logo.png") %>
     <%= @page_title || "Pragmatic Bookshelf" %><!-- <label id="code.depot.e.title"/> -->
   </div>
-  <% if session[:counter] >= 5 -%>
-    <div id="counter"><%= "Times visited: " + session[:counter].to_s %></div>
+  <% if session[:counter] %>
+    <% if session[:counter] >= 5 -%>
+      <div id="counter"><%= "Times visited: " + session[:counter].to_s %></div>
+    <% end %>
   <% end %>
   <div id="columns">
     <div id="side">
-      <% hidden_div_if(@cart.items.empty?, :id => "cart") do %>
-        <%= render(:partial => "cart", :object => @cart) %>
+      <% if @cart %>
+        <% hidden_div_if(@cart.items.empty?, :id => "cart") do %>
+          <%= render(:partial => "cart", :object => @cart) %>
+        <% end %>
       <% end %>
       <br />
       <%= link_to "Home", :action => "index" %><br />
       <a href="http://www..../faq">Questions</a><br />
       <a href="http://www..../news">News</a><br />
       <a href="http://www..../contact">Contact</a><br />
+
+      <% if session[:user_id] %>
+        <br />
+        <%= link_to 'Orders', :controller => "orders" %><br />
+        <%= link_to 'Products', :controller => 'products' %><br />
+        <%= link_to 'Users', :controller => 'users' %><br />
+        <br />
+        <%= link_to 'Logout', :controller => 'admin', :action => 'logout' %>
+      <% end %>
 		<%= Time.now %>
     </div>
     <div id="main">
