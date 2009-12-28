@@ -51,7 +51,7 @@ class StoreController < ApplicationController
   def save_order
     @cart = find_cart
     @order = Order.new(params[:order])
-    @order.add_line_items_from_cart(@cart)
+    @order.add_line_items_from_cart(@cart, session[:user_id])
     if @order.save
       session[:cart] = nil
       redirect_to_index("Thank you for your order")

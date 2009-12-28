@@ -18,6 +18,7 @@
 	<%=h @product.price %>
 </p>
 
+<%= render :partial => 'order_item', :collection => @product.line_items %>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>

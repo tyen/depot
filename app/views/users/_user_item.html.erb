@@ -1,0 +1,12 @@
+<tr>
+  <td><%= link_to (user_item[0].title, user_item[0], :controller => "product") %></td>
+  <td><%= user_item[1].quantity %></td>
+  <td><%= user_item[1].order.collect do |i| 
+    if i != nil
+      link_to(i.id, i, :controller => "order")
+    else
+      "Deleted"
+    end
+  end.to_sentence %></td>
+  <td><%= user_item[1].price %></td>
+</tr>

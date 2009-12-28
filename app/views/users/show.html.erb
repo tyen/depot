@@ -3,16 +3,21 @@
   <%=h @user.name %>
 </p>
 
-<p>
-  <b>Hashed password:</b>
-  <%=h @user.hashed_password %>
-</p>
-
-<p>
-  <b>Salt:</b>
-  <%=h @user.salt %>
-</p>
-
+<table>
+  <tr>
+    <td>Product</td>
+    <td>Quantity</td>
+    <td>Order ID</td>
+    <td>Total Price</td>
+  </tr>
+  <%= render(:partial => "user_item", :collection => @user.get_bought_products) %>
+</table>
+<div>
+  <%= "Total Quantity: #{@user.grand_quantity}" %>
+</div>
+<div>
+  <%= "Total Price: #{@user.grand_price}" %>
+</div>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
