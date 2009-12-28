@@ -7,7 +7,11 @@
   </tr>
 </table>
 
-<%=button_to "Checkout", :action => 'checkout' %>
+<% hidden_div_if(action_name == "checkout", :id => "checkout-button") do %>
+  <div id="checkout-button">
+    <%=button_to "Checkout #{pluralize(cart.total_num_items, 'Item')}", :action => 'checkout' %>
+  </div>
+<% end %>
 <% form_remote_tag :url => { :action => 'empty_cart'} do %>
   <%= submit_tag "Empty Cart" %>
 <% end %>

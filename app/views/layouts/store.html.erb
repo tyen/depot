@@ -25,9 +25,7 @@
       <% end %>
       <br />
       <%= link_to "Home", :action => "index" %><br />
-      <a href="http://www..../faq">Questions</a><br />
-      <a href="http://www..../news">News</a><br />
-      <a href="http://www..../contact">Contact</a><br />
+      <%= link_to "Store", :controller => 'store', :action => "index" %><br />
 
       <% if session[:user_id] %>
         <br />
@@ -37,7 +35,6 @@
         <br />
         <%= link_to 'Logout', :controller => 'admin', :action => 'logout' %>
       <% end %>
-		<%= Time.now %>
     </div>
     <div id="main">
       <% if flash[:notice] -%>
